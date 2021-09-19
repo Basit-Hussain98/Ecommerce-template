@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<!-- FONT AWESOME -->
+		<script src="https://kit.fontawesome.com/6b1b29a195.js" crossorigin="anonymous"></script>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="CSS/Styles.css" />
+		<link rel="stylesheet" href="CSS/products.css" />
+		<style>
+			.btn {
+				background-color: #df5531;
+				color: white;
+				border-radius: 50px;
+				margin-left: 25px;
+				font-size: 12px;
+				padding: 7px 30px;
+			}
+			.btn:hover {
+				background-color: black;
+				color: white;
+			}
+
+			@media (max-width: 550px) {
+				.related-products h4 {
+					font-size: 15px;
+				}
+
+				.related-products p {
+					font-size: 10px;
+					padding: 0;
+					margin-right: 0;
+				}
+			}
+
+			@media (max-width: 425px) {
+				.related-products h4 {
+					font-size: 10px;
+				}
+
+				.related-products p {
+					font-size: 7px;
+				}
+			}
+		</style>
+
+		<title>RED STORE</title>
+	</head>
+	<body>
+		<header class="products-header">
+			<div class="container">
+				<!-- nav starst -->
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" width="110px" alt="" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="products.html">Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Acount</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="cart.html">
+									<img src="images/cart.png" width="25px" height="25px" alt=""
+								/></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- nav ends -->
+			</div>
+		</header>
+		<!-- Header ends -->
+
+		<div class="img-detail mt-5 pt-5">
+			<div class="container">
+				<div class="row mx-5">
+					<div class="col-md-6">
+						<img src="images/gallery-4.jpg" id="big-img" class="img-fluid" alt="" />
+						<div class="row mt-2">
+							<div class="col-3">
+								<img src="images/gallery-1.jpg" class="img-fluid small-img" alt="" />
+							</div>
+							<div class="col-3">
+								<img src="images/gallery-2.jpg" class="img-fluid small-img" alt="" />
+							</div>
+							<div class="col-3">
+								<img src="images/gallery-3.jpg" class="img-fluid small-img" alt="" />
+							</div>
+							<div class="col-3">
+								<img src="images/gallery-4.jpg" class="img-fluid small-img" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<p class="mt-4 mb-3">Home/T-shirt</p>
+						<h1 class="font-weight-bold">Red Printed T-Shirt By HRX</h1>
+						<p class="font-weight-bold mt-2">$50.00</p>
+						<select class="" id="sel1" style="border: 1px solid #f25c39;">
+							<option class="" value="">Select Size</option>
+							<option>S</option>
+							<option>M </option>
+							<option>L</option>
+							<option>XL</option> </select
+						><br />
+						<input
+							class="mt-4 text-center"
+							style="border: 1px solid #f25c39; width: 40px; height: 40px;"
+							type="number"
+							value="1"
+						/>
+						<a href="cart.html">
+							<button class="btn my-3 pb-2">
+								Add To Cart
+							</button>
+						</a>
+						<h5 class="font-weight-bold mt-3">Product Details</h5>
+						<p class="text-justify" style="font-size: 14px;">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam beatae
+							dolorum reprehenderit quia distinctio fugit? Error a, expedita, tempora aliquam ullam unde
+							repellendus velit eaque architecto maxime commodi adipisci in perspiciatis eligendi
+							deserunt!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var mainImage = document.getElementById('big-img');
+			// var noOfSmallImages = document.querySelectorAll('.small-img').length;
+			// for (var i = 0; i < noOfSmallImages; i++) {
+			// 	document.querySelectorAll('.small-img')[i].addEventListener('click', function () {
+			// 		mainImage.src = document.querySelectorAll('.small-img')[i].src;
+			// 	});
+			// }
+
+			document.querySelectorAll('.small-img')[0].addEventListener('click', function () {
+				mainImage.src = document.querySelectorAll('.small-img')[0].src;
+			});
+			document.querySelectorAll('.small-img')[1].addEventListener('click', function () {
+				mainImage.src = document.querySelectorAll('.small-img')[1].src;
+			});
+			document.querySelectorAll('.small-img')[2].addEventListener('click', function () {
+				mainImage.src = document.querySelectorAll('.small-img')[2].src;
+			});
+			document.querySelectorAll('.small-img')[3].addEventListener('click', function () {
+				mainImage.src = document.querySelectorAll('.small-img')[3].src;
+			});
+		</script>
+
+		<div class="related-products featured-products container my-5 pt-5">
+			<div class="row mx-5">
+				<div class="col-6">
+					<h4 class="font-weight-bold">Related Products</h4>
+				</div>
+				<div class="col-6">
+					<div class="d-flex justify-content-end">
+						<p>View More</p>
+					</div>
+				</div>
+			</div>
+			<div class="row mx-5 py-5">
+				<div class="col-md-3 my-2">
+					<img src="images/product-9.jpg" class="img-fluid" alt="" />
+					<p>
+						Black Sports Watch <br />
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span> <br />$55.00
+					</p>
+				</div>
+				<div class="col-md-3 my-2">
+					<img src="images/product-10.jpg" class="img-fluid" alt="" />
+					<p>
+						Black HRX Shoes <br />
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span> <br />$55.00
+					</p>
+				</div>
+				<div class="col-md-3 my-2">
+					<img src="images/product-11.jpg" class="img-fluid" alt="" />
+					<p>
+						Gray Nike Shoes <br />
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span> <br />$55.00
+					</p>
+				</div>
+				<div class="col-md-3 my-2">
+					<img src="images/product-12.jpg" class="img-fluid" alt="" />
+					<p>
+						HRX Black TrackPants <br />
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span> <br />$55.00
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<footer class="">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-md-4 mb-2">
+						<h6 class="text-white mb-4">Download Our App</h6>
+						<p class="mb-4">Download App for Android and IOS</p>
+						<img src="images/app-store.png" class="img-fluid w-25" alt="" />
+						<img src="images/play-store.png" class="img-fluid w-25" alt="" />
+					</div>
+					<div class="col-md-4 mb-2">
+						<img src="images/logo.png" class="w-50 mb-3" alt="" />
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis iure error
+							ratione cupiditate atque pariatur.
+						</p>
+					</div>
+					<div class="col-md-2 mb-2">
+						<h6 class="text-white">Usefull Links</h6>
+						<p class="mt-4">Coupon <br />Blog Posts <br />Return Policy <br />John Affiloto</p>
+					</div>
+					<div class="col-md-2 mb-2">
+						<h6 class="text-white">Follow Us</h6>
+						<p class="mt-4">
+							Facebook <br />
+							Twitter <br />Instagram <br />Youtube
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- footer ends -->
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

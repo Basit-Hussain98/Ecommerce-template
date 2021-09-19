@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Header starts */
+.home-header {
+	background-color: #ffe0dd;
+}
+
+.header-row h1 {
+	font-weight: bold;
+}
+
+/* Common button header and band section */
+.header-row .btn,
+.smart-band .btn {
+	background-color: #df5531;
+	color: white;
+	border-radius: 50px;
+}
+
+.header-row .btn:hover,
+.smart-band .btn:hover {
+	background-color: black;
+}
+
+@media (max-width: 991px) {
+	.header-row .left p {
+		font-size: 13px;
+		margin: 0px;
+	}
+
+	.header-row .left h1 {
+		font-size: 30px;
+	}
+}
+
+/* Header ends */
+
+/* Featured */
+/* common hr */
+hr {
+	border: 2px solid #e4401a;
+	width: 8%;
+	margin: 0 auto;
+}
+
+/* card hover common feature and products  */
+.featured-products .col-md-3:hover,
+.latest-products .col-md-3:hover {
+	transform: translateY(-5px);
+	transition: 0.5s;
+}
+
+.checked {
+	color: orange;
+}
+
+/* Featured ends */
+
+/* Latest products */
+
+/* Latest products ends */
+/* smart band */
+.smart-band {
+	background-color: #ffe0dd;
+}
+
+/* smart band ends */
+/* rating starts */
+.ratings .box:hover {
+	transform: translateY(-5px);
+	transition: 0.5s;
+}
+
+.ratings .box p {
+	font-size: 12px;
+}
+
+.ratings .box h3 {
+	color: #e4401a;
+}
+
+.ratings .box span {
+	font-size: 12px;
+}
+
+/* rating ends */
+
+/* brands */
+.brands img {
+	filter: grayscale(100%);
+}
+
+/* brands ends */
+/* footer */
+footer {
+	background-color: black;
+}
+
+footer p {
+	color: gray;
+}
